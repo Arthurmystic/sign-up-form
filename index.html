@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up-form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Liter&family=Outfit&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left-pane">
+        <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="background-image" id="bg-image">
+
+        <div class="logo-container">
+            <img src="./images/odin-lined.png" alt="odin-logo" id="odin-logo">
+            <p id="logo-name">Odin</p>
+        </div>
+
+        <p id="credit"> Photo by Halie West from Unsplash</p>
+
+
+    </div>
+
+    <div class="right-pane">
+
+        <section id="top">
+            <p class="pad-content"> This is not a real online service! You know you need something
+                like this in you life to help you realize your deepest dreams.
+                <br>Sign up <em>now</em> to get started <br> <br> You <em>know</em> you want to.
+            </p>
+        </section>
+
+        <form id="bottom">
+
+
+            <fieldset id="the-form-fieldset" class="pad-content" action="#" method="post">
+
+                <p class="the-form-text">Let's do this!</p>
+
+                <div id="form-content">
+
+                    <div id="left-column">                        
+
+                        <label for="first_name">FIRST NAME</label>
+                        <input type="text" name="first_name" id="first_name" pattern="[A-Za-z']{1,32}" title="Name should only contain letters.">
+
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+
+                        <label for="passcode">PASSWORD</label>
+                        <input type="password" name="passcode" id="passcode" required>
+
+                    </div>
+
+                    <div id="right-column">
+
+                        <label for="last_name">LAST NAME</label>
+                        <input type="text" name="last_name" id="last_name" pattern="[A-Za-z']{1,32}" title="Name should only contain letters.">
+
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="number" name="phone-number" id="phone-number" min="0">
+
+                        <label for="confirm-passcode">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-passcode" id="confirm-passcode" required>
+
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="accout-creation">
+
+                <button type="submit"> Create Account</button>
+                <p>Already have an account? <span> <a href="#"> Log in</a></span></p>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
